@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Domaći rad</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/font-awesome.min.css"/>
+        <link rel="stylesheet" href="styles/fontawesome.css"/>
+        <link rel="stylesheet" type="text/css" href="E:\Fakultet - FESB\5. Semestar\Programiranje za Internet\Vježbe\Homework\Domaci.css"/>
+        <template id="user_box_template">
+            <div class="user_box">
+                <div class="user_box_2">
+                    <img src="images\user_pictures\Bugs_Bunny_User.jpg" class="user">
+                    <div class='name'>
+                        <p>Bugs Bunny</p>
+                    </div>
+                    <label id='location'></label>
+                </div>
+                <img id='img' src='' class="picture" >
+                <div class="icons">
+                    <div>
+                        <i class="fa fa-heart-o heart_icon"></i>
+                        <i class="fa fa-comment-o comment"></i>
+                    </div>
+                    <i class="fa fa-bookmark-o bookmark"></i>
+                </div>
+                <p class="hashes"></p>
+                <p>Sviđa mi se: <var>50</var></p>
+                <div class="comments">
+                    <input type="text" class="comment_box" placeholder="Komentiraj...">
+                </div>
+            </div>
+        </template>
+        <template id='comment_template'>
+            <p id='a'>Bugs Bunny: </p>
+        </template>
+    </head>
+
+    <body>
+        <header>
+            <div id="left_icons">
+                <i class="fa fa-instagram"></i>
+                <label>Instagram</label>
+            </div>
+            <div id="search">
+                <i class="fa fa-search"></i>
+                <input type="text" id="search_box" placeholder="search" value=""/>
+            </div>
+            <div id="right_icons">
+                <i class="fa fa-heart-o heart_icon" id='main_heart'></i>
+                <i class="fa fa-user-times" id='main_user'></i>
+            </div>
+        </header>
+
+        <main>
+           <div id=left_column>
+                <button id="add_button">Dodaj</button>
+                <div class="user_box">
+                    <div class="user_box_2">
+                        <img src="images\user_pictures\Bugs_Bunny_User.jpg" class="user">
+                        <div class='name'>
+                            <p>Bugs Bunny</p>
+                        </div>
+                        <label>U šumi</label>
+                    </div>
+                    <img src="images\King.png" class="picture">
+                    <div class="icons">
+                        <div>
+                            <i class="fa fa-heart-o heart_icon"></i>
+                            <i class="fa fa-comment-o comment"></i>
+                        </div>
+                        <i class="fa fa-bookmark-o bookmark"></i>
+                    </div>
+                    <p class="hashes">#goldenboy#kingofthejugle#cruellaDeVille</p>
+                    <p>Sviđa mi se: <var>50</var></p>
+                    <div class="comments">
+                        <input type="text" class="comment_box" placeholder="Komentiraj...">
+                    </div>
+                </div>
+                <div id="suggestion_box">
+                    <label> Prijedlozi za vas: </label>
+                    <div id="suggested_users">
+                        <div class="suggested_user">
+                            <img src="images\user_pictures\Sylvester_User.jpg" class="user">
+                            <i class="fa fa-close no_follow"></i>
+                            <h6>Sylvester</h6>
+                            <button class='follow_user'>prati</button>
+                        </div>
+                        <div class="suggested_user">
+                                <img src="images\user_pictures\The_Coyote_User.jpg" class="user">
+                                <i class="fa fa-close no_follow"></i>
+                                <h6>Coyote</h6>
+                                <button class='follow_user'>prati</button>
+                        </div>
+                        <div class="suggested_user">
+                                <img src="images\user_pictures\The_Roadrunner_User.jpg" class="user">
+                                <i class="fa fa-close no_follow"></i>
+                                <h6>Roadrunner</h6>
+                                <button class='follow_user'>prati</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="user_box">
+                        <div class="user_box_2">
+                            <img src="images\user_pictures\Daffy_Duck_User.jpg" class="user">
+                            <div class='name'>
+                                <p>Daffy Duck</p>
+                            </div>
+                            <label>Kod Zeca</label>
+                        </div>
+                        <img src="images\Lawyer.jpg" class="picture">
+                        <div class="icons">
+                            <div>
+                                <i class="fa fa-heart-o heart_icon"></i>
+                                <i class="fa fa-comment-o comment"></i>
+                            </div>
+                            <i class="fa fa-bookmark-o bookmark"></i>
+                        </div>
+                        <p class="hashes">#perfectDuckFace#classy</p>
+                        <p>Sviđa mi se: <var>160</var></p>
+                        <div class="comments">
+                            <input type="text" class="comment_box" placeholder="Komentiraj...">
+                        </div>
+                </div>
+                <div class="user_box">
+                            <div class="user_box_2">
+                                <img src="images\user_pictures\Taz_Devil_User.jpg" class="user">
+                                <div class='name'>
+                                    <p>Tazz the Jazz</p>
+                                </div>
+                                <label>Svugdi san brate</label>
+                            </div>
+                            <img src="images\Detective.jpg" class="picture">
+                            <div class="icons">
+                                <div>
+                                    <i class="fa fa-heart-o heart_icon"></i>
+                                    <i class="fa fa-comment-o comment"></i>
+                                </div>
+                                <i class="fa fa-bookmark-o bookmark"></i>
+                            </div>
+                            <p class="hashes">#NewYearNewMe#Yellow#YouCanLeaveYourHatOn</p>
+                            <p>Sviđa mi se: <var>5600</var></p>
+                            <div class="comments">
+                                <input type="text" class="comment_box" placeholder="Komentiraj...">
+                            </div>
+                </div>
+                <div class="user_box">
+                                <div class="user_box_2">
+                                    <img src="images\user_pictures\Marvin_The_Martian_User.jpg" class="user">
+                                    <div class='name'>
+                                        <p>M4rv1n</p>
+                                    </div>
+                                    <label>Igralište kraj kuće</label>
+                                </div>
+                                <img src="images\Basketball.jpg" class="picture">
+                                <div class="icons">
+                                    <div>
+                                        <i class="fa fa-heart-o heart_icon"></i>
+                                        <i class="fa fa-comment-o comment"></i>
+                                    </div>
+                                    <i class="fa fa-bookmark-o bookmark"></i>
+                                </div>
+                                <p class="hashes">#BigBoy#BreakingAnkles#FiredUp</p>
+                                <p>Sviđa mi se: <var>6</var></p>
+                                <div class="comments">
+                                    <input type="text" class="comment_box" placeholder="Komentiraj...">
+                                </div>
+                </div>
+           </div>
+           <div id="right_column">
+                <div class="user_box_2">
+                    <img src="images\user_pictures\Bugs_Bunny_User.jpg" class="user">
+                    <p id='main_name'>Bugs Bunny</p>
+                    <label>Zekoslav Mrkva</label>
+                </div>
+                <div id="info">
+                    <p>O meni:</p>
+                    <p>Korisnika: <var id='korisnici'>300</var></p>
+                    <p>Lajkao: <var id='lajkovi'>300</var></p>
+                    <p>Bookmarkirao: <var id='bookmarki'>300</var></p>
+                </div>
+                <div id="suggestion_box_1" class='b'>
+                    <label> Mi predlažemo:</label>
+                    <div class='prijedlog'>
+                        <img src="images\user_pictures\Sylvester_User.jpg" class="user">
+                        <p><b>Sylvester</b></p>
+                        <p class="follow">prati</p>
+                    </div>
+                    <div class='prijedlog'>
+                        <img src="images\user_pictures\The_Coyote_User.jpg" class="user">
+                        <p><b>Coyote</b></p>
+                        <p class="follow">prati</p>
+                    </div>
+                    <div class='prijedlog'>
+                        <img src="images\user_pictures\The_Roadrunner_User.jpg" class="user">
+                        <p><b>Roadrunner</b></p>
+                        <p class="follow">prati</p>
+                    </div>
+                </div>
+           </div>
+        </main>
+        <script src='scripts\Domaci.js'></script>
+    </body>
+</html>

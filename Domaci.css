@@ -1,0 +1,252 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ebf0f6;
+}
+
+header{
+    background-color: #98ccd3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#search {
+    background-color:white;
+    padding: 5px; 
+    border-radius: 9px; 
+}
+
+#search_box {
+    outline: none;
+    border: none;
+    margin-left: 4px;
+}
+
+
+.fa-instagram {
+    color: #132238;
+}
+.fa-heart{
+    color:black;
+}
+
+main{
+    margin: 4em auto;
+    max-width: 500px;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 10fr 4fr;
+    grid-column-gap: 1em;
+}
+
+#add_button{
+   width:100%;
+   background-color: #364e68;
+   color: white;
+   padding: 0.5em;
+   margin: 0 auto 2em;
+   border-radius: 20px;
+}
+
+.user_box{
+    margin: 0.9em auto;
+    border: solid grey 1px;
+    background-color: white;
+}
+
+.user_box_1{
+    display: grid;
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 70px auto;
+}
+
+.user{
+    width: 50px;
+    height: 50px;
+    margin: 0.7em 0.4em;
+    border-radius: 50%;
+
+    grid-area: 1 / 1 / 3 / 2;
+    align-items: center;
+}
+
+.user_box_1 h3{
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 90%;
+}
+.user_box_1 label{
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: end;
+    font-size: 90%;
+    color:gray;
+}
+
+.picture{
+    width:100%;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+}
+
+.icons{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-between;
+    padding: 0.5em auto;
+}
+.icons>div{
+    margin-left: 10px;
+}
+.icons .fa-bookmark-o{
+    margin-right: 10px;
+}
+
+.user_box > p{
+    font-size: 70%;
+    margin-left: 6px;
+}
+.hashes{
+    color:blue;
+}
+
+.comments{
+    margin: 0 5px 5px;
+}
+
+#suggestion_box{
+    border: 1px solid grey;
+    padding: 6px 4px;
+    background-color: white;
+}
+
+#suggested_users{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.suggested_user{
+    position: relative;
+    border: 1px solid grey;
+    padding:4px;
+}
+.fa-close{
+    position: absolute;
+    top: 0.01em;
+    right: 0.05em;
+}
+.fa:hover:not(.fa-instagram){
+    transform: scale(1.2);
+}
+
+button:hover{
+    transform: scale(1.05)
+}
+.suggested_user > h6{
+    margin:0;
+    padding: 0 0 6px 0;
+    text-align: center;
+}
+.suggested_user > button{
+    padding: 2px 2em;
+    border-radius: 90px;
+    color: white;
+    background-color: #364e68;
+}
+
+.comment_box{
+    padding: 2px 4px;
+}
+
+.user_box_2{
+    display: grid;
+    grid-template-rows: 35px auto;
+    grid-template-columns:70px auto;
+}
+.user_box_2 > p{
+    font-size: 70%;
+    font-weight: bold;
+    align-self: start;
+    padding: 8px 0;
+}
+.user_box_2 label{
+   font-size: 60%;
+   color: grey;
+   align-self: center;
+   padding-bottom: 5px;
+}
+
+#info{
+    padding-left: 5px;
+    border: 1px solid grey;
+    text-align: left;
+    font-size: 10px;
+    background-color:white;
+}
+#info >:first-child{
+    color:grey;
+}
+
+#suggestion_box_1{
+    border: solid grey 1px;
+    margin-top: 1em;
+}
+#suggestion_box_1 > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#suggestion_box_1 img{
+    width: 35px;
+    height: 35px; 
+}
+#suggestion_box_1 p{
+    padding-top: 15px;
+    font-size: 8px;
+}
+.follow{
+    padding-right:5px;
+    color: blue;
+}
+
+@media screen and (max-width: 450px){
+    #right_column { display: none; }
+}
+@media screen and (max-width: 450px){
+    #search { display: none; }
+}
+@media screen and (max-width: 450px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.fa-heart{
+    color:red;
+}
+
+.fa-bookmark{
+    padding-right: 8.5px;
+}
+
+.comments{
+    font-size:10px;
+}
+
+#suggestion_box_1{
+    background-color: white;
+}
